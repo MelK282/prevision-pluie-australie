@@ -58,7 +58,7 @@ Sous macOS ou Linux, l'environnement s'active avec `source venv/bin/activate`. L
 
 ## Application en ligne
 
-Lien de l'application déployée : à venir.
+Lien de l'application déployée : https://prevision-pluie-australie.streamlit.app
 
 ## Notebooks
 

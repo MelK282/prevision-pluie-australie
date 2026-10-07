@@ -1,0 +1,6 @@
+Variable 1,Variable 2,r,|r|,|Corrélation cible| 1,|Corrélation cible| 2,Décision
+MaxTemp,Temp3pm,0.9831,0.9831,0.1594,0.1924,MaxTemp retirée (Temp3pm conservée)
+Pressure9am,Pressure3pm,0.962,0.962,0.2316,0.2111,Pressure3pm retirée (Pressure9am conservée)
+MinTemp,Temp9am,0.8994,0.8994,0.087,0.0275,Temp9am retirée (MinTemp conservée)
+MaxTemp,Temp9am,0.8863,0.8863,0.1594,0.0275,Paire ignorée (MaxTemp déjà retirée)
+Temp9am,Temp3pm,0.8628,0.8628,0.0275,0.1924,Paire ignorée (Temp9am déjà retirée)

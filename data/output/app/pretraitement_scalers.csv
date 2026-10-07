@@ -1,0 +1,25 @@
+Variable,Skewness,Valeurs aberrantes (%),Scaler,Motif
+Month_cos,0.052,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+Month_sin,0.056,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+Season_cos,0.055,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+Season_sin,0.009,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+WindDir3pm_cos,0.111,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+WindDir3pm_sin,-0.0,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+WindDir9am_cos,-0.025,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+WindDir9am_sin,0.019,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+WindGustDir_cos,0.097,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+WindGustDir_sin,0.119,0.0,MinMaxScaler,"distribution en U non normale d'un sinus / cosinus, sans valeurs aberrantes"
+Humidity9am,-0.489,1.06,RobustScaler,au moins 1 % de valeurs aberrantes
+Humidity_diff,0.07,1.01,RobustScaler,au moins 1 % de valeurs aberrantes
+Pressure_diff,0.637,2.66,RobustScaler,au moins 1 % de valeurs aberrantes
+Rainfall,10.173,17.93,RobustScaler,au moins 1 % de valeurs aberrantes
+WindGustSpeed,0.91,2.29,RobustScaler,au moins 1 % de valeurs aberrantes
+WindSpeed3pm,0.62,1.77,RobustScaler,au moins 1 % de valeurs aberrantes
+WindSpeed9am,0.769,1.28,RobustScaler,au moins 1 % de valeurs aberrantes
+Humidity3pm,0.014,0.0,StandardScaler,"quasi-normale (|skew| < 0,5), moins de 1 % de valeurs aberrantes"
+Location_encoded,-0.352,0.82,StandardScaler,"quasi-normale (|skew| < 0,5), moins de 1 % de valeurs aberrantes"
+Location_encoded_J2,-0.283,0.82,StandardScaler,"quasi-normale (|skew| < 0,5), moins de 1 % de valeurs aberrantes"
+MinTemp,0.03,0.04,StandardScaler,"quasi-normale (|skew| < 0,5), moins de 1 % de valeurs aberrantes"
+Pressure9am,-0.097,0.87,StandardScaler,"quasi-normale (|skew| < 0,5), moins de 1 % de valeurs aberrantes"
+Temp3pm,0.256,0.61,StandardScaler,"quasi-normale (|skew| < 0,5), moins de 1 % de valeurs aberrantes"
+Temp_diff,0.308,0.56,StandardScaler,"quasi-normale (|skew| < 0,5), moins de 1 % de valeurs aberrantes"

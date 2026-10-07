@@ -1,0 +1,4 @@
+Paire,Variables,Corrélation 9 h / 15 h,Lignes avec une valeur manquante,Borne basse,Borne haute,Écarts hypothétiques hors bornes (%),Écarts mesurés hors bornes (%)
+Température 9 h / 15 h,Temp9am / Temp3pm,0.8598,1265,-5.55,14.85,6.64,0.56
+Humidité 9 h / 15 h,Humidity9am / Humidity3pm,0.6649,1497,-61.0,27.0,1.67,1.01
+Pression 9 h / 15 h,Pressure9am / Pressure3pm,0.9619,387,-7.3,2.3,48.58,2.66

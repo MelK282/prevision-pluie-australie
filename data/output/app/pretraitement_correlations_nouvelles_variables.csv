@@ -1,0 +1,6 @@
+Variable,Pearson,Spearman
+Temp_diff,-0.3259,-0.3332
+Humidity_diff,0.2631,0.2561
+Pressure_diff,0.0824,0.0848
+Season,0.0133,0.0127
+Month,0.0096,0.0087

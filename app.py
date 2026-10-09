@@ -198,7 +198,7 @@ RANGEES_OBSERVATIONS = [['MinTemp', 'MaxTemp', 'Temp9am', 'Temp3pm'],
                         ['WindSpeed3pm', 'WindDir3pm', 'Rainfall', 'RainToday']]
 NOMS_MOIS = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre',
              'Novembre', 'Décembre']
-METRIQUES = {'F1-score': 'F1', 'Précision': 'Précision', 'Rappel': 'Rappel', 'Exactitude': 'Exactitude',
+METRIQUES = {'F1-score': 'F1', 'Précision': 'Précision', 'Rappel': 'Rappel', 'Accuracy': 'Accuracy',
              'AUC': 'AUC', "Temps d'entraînement": 'Temps entraînement (s)',
              'Temps de prédiction': 'Temps prédiction (s)', 'Taille du fichier': 'Taille du fichier (Mo)'}
 INTERPRETABILITE = {'Régression logistique': 'Coefficients (odds ratios)', 'Random Forest': 'Importance des variables',
@@ -611,7 +611,7 @@ if page == PAGES[1]:
     st.header("Déséquilibre de la variable cible")
     carte_graphique(st, graphique_repartition_cible(charger_csv('exploration_repartition_cible.csv')),
                     "Un peu plus d'un jour sur cinq (22,4 %) est suivi d'une pluie. Un modèle qui prédirait toujours "
-                    "« pas de pluie » aurait raison 77,6 % du temps sans détecter une seule pluie : l'exactitude est "
+                    "« pas de pluie » aurait raison 77,6 % du temps sans détecter une seule pluie : l'accuracy est "
                     "donc trompeuse ici, d'où le choix du F1-score.", 'repartition')
 
     st.header("Valeurs manquantes")
@@ -801,7 +801,7 @@ if page == PAGES[3]:
                        width='stretch', theme=None, key='comparaison')
     carte.write(LECTURES['comparaison'][horizon])
     tableau = pd.DataFrame({'Modèle': resultats['Modèle']})
-    colonnes_decimales = [['Seuil', 3], ['F1', 3], ['Précision', 3], ['Rappel', 3], ['Exactitude', 3], ['AUC', 3],
+    colonnes_decimales = [['Seuil', 3], ['F1', 3], ['Précision', 3], ['Rappel', 3], ['Accuracy', 3], ['AUC', 3],
                           ['Temps entraînement (s)', 2], ['Temps prédiction (s)', 2]]
     for colonne in colonnes_decimales:
         tableau[colonne[0]] = textes_colonne(resultats[colonne[0]], colonne[1])

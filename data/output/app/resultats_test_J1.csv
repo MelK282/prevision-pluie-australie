@@ -1,4 +1,4 @@
-Modèle,Seuil,F1,Précision,Rappel,Exactitude,AUC,Temps entraînement (s),Temps prédiction (s),Taille du fichier (Mo)
+Modèle,Seuil,F1,Précision,Rappel,Accuracy,AUC,Temps entraînement (s),Temps prédiction (s),Taille du fichier (Mo)
 XGBoost,0.302,0.6595914807007341,0.6124,0.7146,0.8354,0.8823,7.9468,0.049,6.98
 Réseau de neurones,0.306,0.6503307276007216,0.622,0.6814,0.8365,0.8777,68.2,1.5583,0.16
 Random Forest,0.438,0.6418578225978269,0.5845,0.7118,0.8227,0.8745,8.7376,0.319,353.21
